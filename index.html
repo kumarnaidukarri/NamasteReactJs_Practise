@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+   
+    <!-- React CDNs -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- JS -->
+    <script> 
+      // 1.Creates a ReactElement 
+      let h1El=React.createElement("h1",{},"Hello World");
+      // 2.Create root 
+      let rootEl=ReactDOM.createRoot(document.getElementById('root'));
+      // 3.Converts ReactElement into HtmlElement and put it into DOM 
+      rootEl.render(h1El);
+    </script>
+
+</body>
+</html>     
